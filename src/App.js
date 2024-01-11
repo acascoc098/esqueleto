@@ -1,8 +1,11 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import Footer from './Footer';
+import Datos from './Datos';
 
 function App() {
-  return (
+  /*return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,7 +22,16 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  );*/
+
+  return(
+    <div>
+      <Header/>
+      <h1>Mi primera aplicación en React</h1>
+      <Datos/>
+      <Footer/>
+    </div>
+  )
 }
 
 export default App;

@@ -1,0 +1,15 @@
+button{
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+.primary {
+    background-color: aquamarine;
+    
+}
+
+.secondary {
+    background-color: coral;
+    color: aliceblue;
+}

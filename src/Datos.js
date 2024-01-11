@@ -1,4 +1,4 @@
-import Button from './Button'
+import Button from './Button/Button'
 
 function Datos(){
 
@@ -9,7 +9,8 @@ function Datos(){
         <div>
             <p>Andrea Castilla Cocera</p>
             <p>acascoc098</p>
-            <Button title="Aceptar" enviar={onEnviar}/>
+            <Button title="Aceptar" type="primary" enviar={onEnviar}/>
+            <Button title="Denegar" type="secondary" enviar={onEnviar}/>
         </div>
     )
 }

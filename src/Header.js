@@ -1,6 +1,6 @@
 function Header(){
     return(
-        <header>ESTE ES EL ENCABEZADO</header>
+        <header>Desarrollo de Interfaces</header>
     )
 }
 

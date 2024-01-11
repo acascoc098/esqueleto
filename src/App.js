@@ -27,7 +27,7 @@ function App() {
   return(
     <div>
       <Header/>
-      <h1>Mi primera aplicación en React</h1>
+      <h3>Mi primera aplicación en React</h3>
       <Datos/>
       <Footer/>
     </div>

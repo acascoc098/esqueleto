@@ -1,3 +1,4 @@
+import './StudentLis.css'
 
 const StudentList =  () => {
     const students = [
@@ -10,7 +11,7 @@ const StudentList =  () => {
     const getInfoS = () => {
         const list = [];
         for (const student of students) {            
-            list.push(<p>{`${student.firstName} ${student.lastName}`}</p>)
+            list.push(<p className='primeforma'>{`${student.firstName} ${student.lastName}`}</p>)
         }
         return list;
     }
@@ -25,6 +26,8 @@ const StudentList =  () => {
             {/*{students} Esto sería una forma de hacerlo, 
             pero hay que convertilo en jsx, como en prueba -> {prueba}*/}
             {getInfoS()}
+
+            {students.map((st) => <p className="secoforma">{`${st.firstName} ${st.lastName}`}</p>)}
         </>
     )
 }

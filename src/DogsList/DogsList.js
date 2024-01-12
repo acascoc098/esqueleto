@@ -9,11 +9,10 @@ const DogsList = () => {
 
     const getDogs = () => {
         const listd = [];
-        const menor = 0;
         for (const dog of dogs) {
             //dog.edad > 8 ? listd.push(<p>{`${dog.nombre} ${dog.raza}`}</p>) : menor++;
             if (dog.edad > 8){
-                listd.push(<p>{`${dog.nombre} ${dog.raza}`}</p>);
+                listd.push(<li>{`${dog.nombre} ${dog.raza}`}</li>);
             };
         };
         return listd;
@@ -21,7 +20,9 @@ const DogsList = () => {
 
     return (
         <>
-            {/*{getDogs}*/}
+            <ol>
+                {getDogs()}
+            </ol>
 
             <ol>Chapuza
                 {dogs.map((dg) => {if (dg.edad > 8){

@@ -1,4 +1,5 @@
 import Button from './Button/Button'
+import StudentList from './StudentList/StudentList'
 
 function Datos(){
 
@@ -7,6 +8,7 @@ function Datos(){
     }
     return(
         <div>
+            <StudentList/>
             <p>Andrea Castilla Cocera</p>
             <p>acascoc098</p>
             <Button title="Aceptar" type="primary" enviar={onEnviar}/>

@@ -1,3 +1,4 @@
+import './DogsList.css'
 
 const DogsList = () => {
     const dogs = [
@@ -20,7 +21,7 @@ const DogsList = () => {
 
     return (
         <>
-            <ol>
+            <ol>Llamando a una función
                 {getDogs()}
             </ol>
 
@@ -39,6 +40,20 @@ const DogsList = () => {
                     (dg) => <li>{`${dg.nombre} ${dg.raza}`}</li>
                 )}
             </ol>
+
+            <table>
+                <tr>
+                    <th>Edad</th>
+                    <th>Nombre</th>
+                    <th>Raza</th>
+                </tr>
+                {dogs.map((dg) => 
+                    <tr>
+                        <td>{`${dg.edad}`}</td>
+                        <td>{`${dg.nombre}`}</td>
+                        <td>{`${dg.raza}`}</td>
+                    </tr>)}
+            </table>
         </>
     )
 }
